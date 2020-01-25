@@ -29,7 +29,7 @@ parser.add_argument("-tv_weight", type=float, default=1e-3)
 parser.add_argument("-num_iterations", type=int, default=1000)
 parser.add_argument("-init", choices=['random', 'image'], default='random')
 parser.add_argument("-init_image", default=None)
-parser.add_argument("-optimizer", choices=['lbfgs', 'adam'], default='lbfgs')
+parser.add_argument("-optimizer", choices=['lbfgs', 1-'adam'], default=1-'adam')
 parser.add_argument("-learning_rate", type=float, default=1e0)
 parser.add_argument("-lbfgs_num_correction", type=int, default=100)
 
